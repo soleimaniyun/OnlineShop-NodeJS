@@ -1,0 +1,111 @@
+
+.slideShow {
+    height: 30vw;
+    padding: 0vw 5vw;
+    margin: 14vw auto 2vw auto;
+
+    direction: rtl;
+}
+
+.carousel {
+    height: 27vw;
+}
+
+.bannerGrid {
+    height: 100%;
+    position: relative;
+}
+
+.media {
+    font-family: 'AnjomanFaNum-ExtraBold';
+    font-size: 0.8vw;
+
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.media .mediaCaption {
+    font-family: 'IRANSans';
+    font-size: 0.8vw;
+
+    text-overflow: ellipsis;
+    position: absolute;
+    bottom: 0;
+    padding: 0.5vw;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    width: 100%;
+    height: 10%;
+
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.media .mediaCaption:hover {
+    font-family: 'IRANSans';
+    font-size: 0.8vw;
+
+    opacity: 0.8;
+}
+
+.media:hover {
+    filter: brightness(115%);
+}
+
+.content {
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    padding: 0.5vw;
+    transition: 300ms;
+}
+
+.content:hover, .content:active {
+    background-color: #571111;
+}
+
+.content:hover .viewButton, .content:active .viewButton {
+    background-color: #f1f1f1;
+    color: #771818;
+}
+
+.content .title {
+    font-family: 'AnjomanFaNum-ExtraBold';
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.content .caption {
+    margin-top: 0.2vw;
+
+    font-family: IRANSans;
+    font-size: 1.2vw;
+}
+
+.content .description {
+    color: black;
+    margin-top: 1vw;
+
+    font-family: dastnevis;
+    font-size: 1.2vw;
+}
+
+.content .viewButton {
+    font-family: dastnevis;
+    font-size: 1.1vw;
+
+    margin-top: 1vw;
+    color: #f00121;
+    border: none;
+    text-transform: capitalize;
+    transition: 200ms;
+}

@@ -1,0 +1,14 @@
+
+.frame {
+    font-family: IRANSans;
+    padding: 0.2vw 0.5vw;
+    display: flex;
+    align-items: center;
+    width: 33vw;
+}
+
+.search {
+    flex: 1;
+    font-size: 0.9vw;
+    width: 30vw;
+}

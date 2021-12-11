@@ -1,0 +1,47 @@
+
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+.panelA {
+    width: 20vw;
+    min-height: 100vh;
+}
+
+.panelB {
+    width: 76vw;
+    min-height: 100vh;
+
+    padding: 0vw;
+}
+
+.products { }
+
+.products .panelD {
+    width: 76vw;
+    min-height: 100vh;
+}
+
+.products .panelC {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products .panelE {
+    width: 76vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.crumbs {
+    font-family: 'IRANSans';
+}
+
+.tree {
+    font-family: 'IRANSans';
+}
+
+

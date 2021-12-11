@@ -1,0 +1,127 @@
+
+.footer {
+    background-color: gainsboro;
+    direction: rtl;
+    font-family: IRANSans;
+    padding: 1vw 2vw;
+    min-height: 10vw;
+}
+
+.containerA {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1vw;
+}
+
+.containerB {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.containerB > div {
+    font-size: 0.9vw;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+.containerC {
+    background-color: gainsboro;
+    color: dimgray;
+    direction: rtl;
+    font-family: IRANSans;
+    font-size: 0.9vw;
+    padding: 1vw 2vw;
+}
+
+.containerD {
+    text-align: center;
+    background-color: dimgray;
+    color: gainsboro;
+    direction: rtl;
+    font-family: IRANSans;
+    font-size: 0.8vw;
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+}
+
+.hr {
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    color: lightgrey;
+}
+
+.textA {
+    color: dimgrey;
+    padding-left: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.textC {
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+.textD {
+    padding-left: 0.5vw;
+    font-size: 1.3vw;
+}
+
+.inputBox {
+    color: dimgrey;
+    font-family: IRANSans;
+    font-size: 0.8vw;
+    border-top-right-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+    border: darkgray 1px solid;
+    padding: 0.3vw 0.5vw;
+    text-align: center;
+    border-left: none;
+}
+
+.submitBox {
+    color: dimgrey;
+    font-family: IRANSans;
+    font-size: 0.8vw;
+    border-top-left-radius: 0.3vw;
+    border-bottom-left-radius: 0.3vw;
+    border: darkgray 1px solid;
+    padding: 0.3vw 0.5vw;
+    text-align: center;
+}
+
+.inputBox:focus , .submitBox:focus {
+    box-sizing: border-box;
+    border: darkgray 1px solid;
+    outline: #F8F8F8;
+}
+
+.social {
+    font-size: 0.9vw;
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
+.copyright {
+    font-size: 0.7vw;
+    margin-top: 3vw;
+    padding-bottom: 0.5vw;
+    color: darkgray;
+}
+
+.about {
+    width: 50%;
+    text-align: justify;
+}
+
+.about > p {
+    color: orange;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+.license {
+    align-self: center;
+}

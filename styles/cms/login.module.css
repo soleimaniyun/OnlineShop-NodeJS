@@ -1,0 +1,53 @@
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    direction: rtl;
+    font-family: IRANSans;
+    font-size: 1vw;
+
+    background-image: url('/images/backGround1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    width: 20vw;
+    margin-right: 40vw;
+    padding-top: 30vh;
+}
+
+.login .item {
+    min-width: 20vw;
+    margin: 0.5vw;
+    font-size: 0.9vw;
+}
+
+.login .button {
+    min-width: 40%;
+    margin: 5%;
+}
+
+.logo {
+    position: fixed;
+    right: 5vw;
+    bottom: 4vw;
+    width: 20vw;
+    height: 3vw;
+}
+
+.logo .text {
+    font-family: Dastnevis;
+    font-size: 1.3vw;
+    color: darkgray;
+}
+
+.logo .icon {
+    height: 2.5vw;
+    width: auto;
+    object-fit: fill;
+}

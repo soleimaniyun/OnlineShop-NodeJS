@@ -1,0 +1,341 @@
+@font-face {
+  font-family : AnjomanFaNum-Medium;
+  src:url('../public/fonts/AnjomanFaNum-Medium.eot?v=4.6.3');
+  src:url('../public/fonts/AnjomanFaNum-Medium.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/AnjomanFaNum-Medium.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/AnjomanFaNum-Medium.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/AnjomanFaNum-Medium.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family :AnjomanFaNum-Heavy;
+  src:url('../public/fonts/AnjomanFaNum-Heavy.eot?v=4.6.3');
+  src:url('../public/fonts/AnjomanFaNum-Heavy.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/AnjomanFaNum-Heavy.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/AnjomanFaNum-Heavy.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/AnjomanFaNum-Heavy.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family :AnjomanFaNum-ExtraLight;
+  src:url('../public/fonts/AnjomanFaNum-ExtraLight.eot?v=4.6.3');
+  src:url('../public/fonts/AnjomanFaNum-ExtraLight.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/AnjomanFaNum-ExtraLight.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/AnjomanFaNum-ExtraLight.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/AnjomanFaNum-ExtraLight.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family :AnjomanFaNum-ExtraBold;
+  src:url('../public/fonts/AnjomanFaNum-ExtraBold.eot?v=4.6.3');
+  src:url('../public/fonts/AnjomanFaNum-ExtraBold.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/AnjomanFaNum-ExtraBold.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/AnjomanFaNum-ExtraBold.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/AnjomanFaNum-ExtraBold.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family :AnjomanFaNum-Black;
+  src:url('../public/fonts/AnjomanFaNum-Black.eot?v=4.6.3');
+  src:url('../public/fonts/AnjomanFaNum-Black.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/AnjomanFaNum-Black.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/AnjomanFaNum-Black.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/AnjomanFaNum-Black.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family :AnjomanFaNum-SemiBold;
+  src:url('../public/fonts/AnjomanFaNum-SemiBold.eot?v=4.6.3');
+  src:url('../public/fonts/AnjomanFaNum-SemiBold.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/AnjomanFaNum-SemiBold.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/AnjomanFaNum-SemiBold.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/AnjomanFaNum-SemiBold.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family :AnjomanFaNum-Thin;
+  src:url('../public/fonts/AnjomanFaNum-Thin.eot?v=4.6.3');
+  src:url('../public/fonts/AnjomanFaNum-Thin.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/AnjomanFaNum-Thin.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/AnjomanFaNum-Thin.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/AnjomanFaNum-Thin.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family :AnjomanFaNum-UltraBold;
+  src:url('../public/fonts/AnjomanFaNum-UltraBold.eot?v=4.6.3');
+  src:url('../public/fonts/AnjomanFaNum-UltraBold.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/AnjomanFaNum-UltraBold.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/AnjomanFaNum-UltraBold.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/AnjomanFaNum-UltraBold.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family :Dastnevis;
+  src:url('../public/fonts/dastnevis.eot?v=4.6.3');
+  src:url('../public/fonts/dastnevis.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/dastnevis.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/dastnevis.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/dastnevis.svg?v=4.6.3#dastnevis') format('svg');
+}
+@font-face {
+  font-family :Barcode;
+  src:url('../public/fonts/barcode.eot?v=4.6.3');
+  src:url('../public/fonts/barcode.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+  url('../public/fonts/barcode.woff2?v=4.6.3') format('woff2'),
+  url('../public/fonts/barcode.woff?v=4.6.3') format('woff'),
+  url('../public/fonts/barcode.ttf?v=4.6.3') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../public/fonts/IRANSansWeb(FaNum)_Black.eot');
+  src: url('../public/fonts/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../public/fonts/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../public/fonts/IRANSansWeb(FaNum)_Bold.eot');
+  src: url('../public/fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../public/fonts/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/fonts/IRANSansWeb(FaNum)_Medium.eot');
+  src: url('../public/fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../public/fonts/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../public/fonts/IRANSansWeb(FaNum)_Light.eot');
+  src: url('../public/fonts/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../public/fonts/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../public/fonts/IRANSansWeb(FaNum)_UltraLight.eot');
+  src: url('../public/fonts/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../public/fonts/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../public/fonts/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../public/fonts/IRANSansWeb(FaNum).eot');
+  src: url('../public/fonts/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../public/fonts/IRANSansWeb(FaNum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../public/fonts/IRANSansWeb(FaNum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../public/fonts/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+@font-face {
+  font-family: Sans;
+  src: url('../public/fonts/PublicSans-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: SansItalic;
+  src: url('../public/fonts/PublicSans-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: Rosario;
+  src: url('../public/fonts/Rosario-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: RosarioItalic;
+  src: url('../public/fonts/Rosario-Italic-VariableFont_wght.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: IRANSans;
+}
+
+html,
+body {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  font-family: IRANSans;
+  font-size: 1vw;
+  background-color: #F8F8F8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.flipClock {
+  display: flex;
+  justify-content: space-between;
+
+  width: 14vw;
+}
+
+.flipUnitContainer {
+  display: block;
+  position: relative;
+  width: 4vw;
+  height: 3vw;
+  perspective-origin: 50% 50%;
+  perspective: 300px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 10px 10px -10px grey;
+}
+
+.upperCard, .lowerCard {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border: 1px solid whitesmoke;
+}
+.upperCard span, .lowerCard span {
+  font-size: 1.5vw;
+  font-family: "AnjomanFaNum-Black", monospace;
+  font-weight: bold;
+  color: #333333;
+}
+
+.upperCard {
+  align-items: flex-end;
+  border-bottom: 0.5px solid whitesmoke;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.upperCard span {
+  transform: translateY(50%);
+}
+
+.lowerCard {
+  align-items: flex-start;
+  border-top: 0.5px solid whitesmoke;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.lowerCard span {
+  transform: translateY(-50%);
+}
+
+.flipCard {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flipCard span {
+  font-size: 1.5vw;
+  font-family: "AnjomanFaNum-Black", monospace;
+  font-weight: bold;
+  color: #333333;
+}
+.flipCard.unfold {
+  top: 50%;
+  align-items: flex-start;
+  transform-origin: 50% 0%;
+  transform: rotateX(180deg);
+  background-color: white;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 0.5px solid whitesmoke;
+  border-top: 0.5px solid whitesmoke;
+}
+.flipCard.unfold span {
+  transform: translateY(-50%);
+}
+.flipCard.fold {
+  top: 0%;
+  align-items: flex-end;
+  transform-origin: 50% 100%;
+  transform: rotateX(0deg);
+  background-color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 0.5px solid whitesmoke;
+  border-bottom: 0.5px solid whitesmoke;
+}
+.flipCard.fold span {
+  transform: translateY(50%);
+}
+
+.fold {
+  -webkit-animation: fold 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal forwards;
+  animation: fold 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal forwards;
+  transform-style: preserve-3d;
+}
+
+.unfold {
+  -webkit-animation: unfold 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal forwards;
+  animation: unfold 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal forwards;
+  transform-style: preserve-3d;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0.8vw;
+  bottom: 0.8vw;
+}
+
+@-webkit-keyframes fold {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+@keyframes fold {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+@-webkit-keyframes unfold {
+  0% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes unfold {
+  0% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-page.MuiPaginationItem-textPrimary {
+  font-family: 'IRANSans';
+}
+
+.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-page.MuiPaginationItem-rounded {
+  font-family: 'IRANSans';
+}
+

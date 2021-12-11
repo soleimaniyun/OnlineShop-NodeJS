@@ -1,0 +1,52 @@
+
+.carousel {
+    text-align: center;
+    width: 70vw;
+}
+
+.title {
+    font-family: 'IRANSans';
+    font-size: 1vw;
+
+    height: 2vw;
+}
+
+.brand {
+    font-family: 'IRANSans';
+    font-size: 0.8vw;
+    font-weight: bold;
+
+    height: 3vw;
+    text-overflow: ellipsis;
+}
+
+.discount {
+    direction: rtl;
+    font-family: 'AnjomanFaNum-ExtraBold';
+    font-size: 0.8vw;
+    text-align: left;
+    padding: 0.3vw;
+}
+
+.status {
+    height: 2vw;
+    font-family: 'IRANSans';
+    font-size: 0.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status div {
+    margin-left: 0.5vw;
+    margin-right: 0.1vw;
+}
+
+.correction {
+    background-image: url("/images/correction.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    padding: 0.2vw;
+}
+

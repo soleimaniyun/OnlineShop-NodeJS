@@ -1,0 +1,285 @@
+
+@media screen and (min-width: 600px) {
+
+    .desktop {
+        display: block;
+        padding-left: 3vw;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .containerA {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .containerA > div {
+        align-self: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .containerB {
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .containerB > div {
+        align-self: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .containerC {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 0 3vw 1vw 3vw;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .containerD {
+        background-color: white;
+        border: lavender 1px solid;
+
+        position: absolute;
+        display: flex;
+        margin-top: 0vw;
+        width: 92vw;
+        margin-right: 4vw;
+        padding: 1vw;
+
+        z-index: 100;
+    }
+
+    .containerD .partitionA {
+        width: 15%;
+        border-left: 1px lavender solid;
+    }
+
+    .containerD .partitionA .itemA {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .containerD .partitionA .itemA:hover {
+        background-color: gainsboro;
+    }
+
+    .containerD .partitionB {
+        width: 80%;
+        padding-right: 1vw;
+    }
+
+    .containerD .partitionB .frameA {
+        display: flex;
+    }
+
+    .containerD .partitionB .frameA > div {
+        width: 15vw;
+    }
+
+    .containerD .partitionB .imageA {
+        width: 15vw;
+        height: auto;
+    }
+
+    .containerD .partitionB .titleA {
+        color: dimgrey;
+        font-size: 0.8vw;
+        font-weight: bold;
+        padding: 0.5vw;
+    }
+
+    .containerD .partitionB .subtitleA {
+        color: dimgrey;
+        font-size: 0.9vw;
+        font-weight: bold;
+        padding: 0.5vw;
+    }
+
+    .containerD .partitionB .itemB {
+        color: dimgrey;
+        font-size: 0.8vw;
+        font-weight: normal;
+        padding: 0.5vw;
+    }
+
+    .containerD .partitionB .symbol {
+        color: dimgrey;
+        font-size: 0.9vw;
+        padding-top: 0.5vw;
+    }
+
+    .containerE {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerE > div {
+        align-self: center;
+        font-weight: bold;
+    }
+
+    .item {
+        align-self: center;
+        font-weight: bold;
+        margin-left: 1vw;
+    }
+
+    .linkB {
+        display: flex;
+        text-align: center;
+        font-size: 0.8vw;
+        color: dimgrey;
+        cursor: pointer;
+    }
+
+    .linkB > * {
+        align-self: center;
+    }
+
+    .searchFrame {
+        width: 40vw;
+        padding: 0.5vw 0.8vw;
+    }
+
+    .borderA {
+        border-color: gainsboro;
+        border-left: 1px;
+        border-bottom: 0px;
+        border-top: 0px;
+        border-right: 0px;
+        border-style: ridge;
+    }
+
+    .paddingA {
+        padding-left: 0.5vw;
+    }
+
+    .positionA {
+        position: absolute;
+        padding-right: 0.5vw;
+        padding-top: 0.5vw;
+        font-size: 0.9vw;
+        font-weight: bold;
+
+        z-index: 100;
+    }
+
+    .logo {
+        width: auto;
+        height: 5vw;
+    }
+
+    .link {
+        text-align: center;
+        font-size: 0.8vw;
+        color: dimgrey;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .containerA {
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .containerA > div {
+        align-self: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .containerB {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        padding-top: 1.5vw;
+    }
+
+    .containerC {
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+    }
+
+    .link {
+        text-align: center;
+        font-size: 5vw;
+        color: dimgrey;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .logo {
+        width: 25vw;
+        height: auto;
+    }
+
+    .searchBox {
+        width: 100%;
+        box-sizing: border-box;
+        border: 0px solid white;
+        background-color: #F8F8F8;
+        color: dimgrey;
+        font-family: IRANSans;
+        font-size: 3vw;
+    }
+
+    .searchBox:focus {
+        box-sizing: border-box;
+        border: 0px solid white;
+        outline: #F8F8F8;
+    }
+
+    .searchBottom {
+        width: 3vw;
+        height: 3vw;
+        background-image: url("/images/search.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #F8F8F8;
+        background-position: center;
+        border: none;
+        float: left;
+    }
+
+    .searchBottom {
+        box-sizing: border-box;
+        border: 0px solid white;
+        outline: #F8F8F8;
+    }
+
+    .searchFrame {
+        display: flex;
+        align-items: center;
+        border: 1px lightslategray solid;
+        width: 65vw;
+        border-radius: 1.8vw;
+        padding: 1vw 1vw;
+        background-color: #F8F8F8;
+    }
+
+}
+

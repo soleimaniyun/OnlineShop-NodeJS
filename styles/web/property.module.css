@@ -1,0 +1,152 @@
+
+.panelA {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+    background-color: white;
+}
+
+.panelB {
+    width: 30vw;
+    min-height: 30vw;
+}
+
+.panelC {
+    width: 70vw;
+    min-height: 30vw;
+    padding: 1vw;
+}
+
+.panelD {
+    width: 30vw;
+    min-height: 30vw;
+    display: flex;
+}
+
+.panelE {
+    width: 4vw;
+    background-color: white;
+}
+
+.panelF {
+    width: 26vw;
+    max-height: 30vw;
+}
+
+.panelF .image {
+    width: 26vw;
+    max-height: 30vw;
+    object-fit: contain;
+}
+
+.panelG {
+    width: 30vw;
+    height: 9vw;
+    display: flex;
+    padding: 0.5vw;
+    overflow-x: hidden;
+}
+
+.panelG .thumbnail {
+    height: 100%;
+    width: 6vw;
+    object-fit: contain;
+}
+
+.panelH {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panelH .partA {
+    width: 43vw;
+    min-height: 30vw;
+}
+
+.panelH .partB {
+    width: 23vw;
+    min-height: 30vw;
+}
+
+.panelI {
+    width: 100%;
+    padding:2vw;
+}
+
+.panelK {
+    width: 15vw;
+    display: inline-block;
+    position: absolute;
+}
+
+.panelL {
+    width: 50vw;
+    min-height: 30vw;
+    display: inline-block;
+    margin-right: 16vw;
+    padding: 1vw;
+}
+
+.panelM {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 30vw;
+}
+
+.panelN {
+    width:70vw;
+    min-height: 30vw;
+}
+
+.panelO {
+    width:25vw;
+    min-height: 30vw;
+    overflow: hidden;
+}
+
+.panelO .picture {
+    width: 5vw;
+    height: auto;
+    object-fit: contain;
+}
+
+.symbol {
+    width: 3vw;
+    height: 3vw;
+    object-fit: contain;
+}
+
+.crumbs {
+    font-family: 'IRANSans';
+    padding: 0.5vw;
+}
+
+.related {
+    width: 100%;
+    margin: 1vw 0;
+    padding-bottom: 2vw;
+}
+
+.title {
+    font-family: 'IRANSans';
+    color: dimgray;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
+
+.title span {
+    border-bottom: orangered 1px solid;
+    padding: 0.5vw;
+}
+
+.properties {
+    display: flex;
+}
+
+.property {
+    width: 20vw;
+}

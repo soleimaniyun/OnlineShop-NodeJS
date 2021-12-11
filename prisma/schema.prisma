@@ -1,0 +1,362 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model access_level_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model access_scope_registry {
+  ASR_ID        Int       @id @default(autoincrement())
+  UAR_ID        BigInt
+  SCP_ID        BigInt
+  Description   String?   @db.Text
+  Record_Status Int?      @default(1)
+  Record_Select Int?      @default(0)
+  Created_at    DateTime  @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime? @db.DateTime(0)
+}
+
+model accounting_account_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model accounting_deed_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model buy_goods_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model buy_order_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model country_state_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model discount_code_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model financial_year_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model goods_cost_registry {
+  GCR_ID        BigInt   @id @default(autoincrement())
+  GDR_ID        BigInt
+  Submiter_ID   BigInt
+  Cost          Float
+  Submit_Date   DateTime @db.DateTime(0)
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model goods_defined_registry {
+  GDR_ID                    BigInt                    @id @default(autoincrement())
+  Goods_Title               String                    @db.Text
+  Unit_Measurement          BigInt
+  Goods_Grouping            BigInt
+  Sales_Amount              Float
+  Popularity_Rate           BigInt
+  Stock                     BigInt
+  Inventory_Limit           BigInt
+  Order_Limit               BigInt
+  Description               String                    @db.Text
+  Record_Status             Int
+  Record_Select             Int
+  Created_at                DateTime                  @default(now()) @db.Timestamp(0)
+  Updated_at                DateTime                  @db.DateTime(0)
+  goods_group_registry      goods_group_registry      @relation(fields: [Goods_Grouping], references: [GGR_ID])
+  unit_measurement_registry unit_measurement_registry @relation(fields: [Unit_Measurement], references: [UMR_ID])
+
+  @@index([Goods_Grouping], name: "Goods_Grouping")
+  @@index([Unit_Measurement], name: "Unit_Measurement")
+}
+
+model goods_group_registry {
+  GGR_ID                 BigInt                   @id @default(autoincrement())
+  Group_Title            String                   @db.Text
+  Group_Level            Int
+  Group_Base             Int
+  Description            String                   @db.Text
+  Record_Status          Int
+  Record_Select          Int
+  Updated_at             DateTime                 @db.DateTime(0)
+  Created_at             DateTime                 @default(now()) @db.Timestamp(0)
+  goods_defined_registry goods_defined_registry[]
+}
+
+model goods_inventory_registry {
+  GIR_ID        BigInt   @id @default(autoincrement())
+  GDR_ID        BigInt
+  Barcode       String   @db.Text
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model goods_invoice_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model goods_property_parameters {
+  GPTP_ID        BigInt   @id @default(autoincrement())
+  Property_Title String   @db.Text
+  Property_Unit  BigInt
+  Property_Icon  String   @db.Text
+  Is_Grouping    Int
+  Description    String   @db.Text
+  Record_Status  Int
+  Record_Select  Int
+  Created_at     DateTime @default(now()) @db.Timestamp(0)
+  Updated_at     DateTime @db.DateTime(0)
+}
+
+model goods_property_registry {
+  GPTR_ID        BigInt   @id @default(autoincrement())
+  GDR_ID         BigInt
+  GPTP_ID        BigInt
+  Property_Value BigInt
+  Description    String   @db.Text
+  Record_Status  Int
+  Record_Select  Int
+  Created_at     DateTime @default(now()) @db.Timestamp(0)
+  Updated_at     DateTime @db.DateTime(0)
+}
+
+model record_status_registry {
+  RSR_ID        BigInt   @id @default(autoincrement())
+  Status_Title  String   @db.Text
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model sales_goods_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model sales_invoice_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model sales_order_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model seller_pavilion_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model system_scope_registry {
+  SCP_ID        BigInt    @id
+  Scope_Title   String    @db.Text
+  Description   String    @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime  @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime? @db.DateTime(0)
+}
+
+model system_status_registry {
+  SSR_ID        BigInt   @id @default(autoincrement())
+  Status_Title  String   @db.Text
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model system_user_proceedings {
+  SUP_ID            BigInt   @id @default(autoincrement())
+  Proceedings_Title String   @db.Text
+  Description       String   @db.Text
+  Record_Status     Int
+  Record_Select     Int
+  Created_at        DateTime @default(now()) @db.Timestamp(0)
+  Updated_at        DateTime @db.DateTime(0)
+}
+
+model unit_measurement_registry {
+  UMR_ID                 BigInt                   @id @default(autoincrement())
+  Measurement_Title      String                   @db.Text
+  Description            String                   @db.Text
+  Record_Status          Int
+  Record_Select          Int
+  Created_at             DateTime                 @default(now()) @db.Timestamp(0)
+  Updated_at             DateTime                 @db.DateTime(0)
+  goods_defined_registry goods_defined_registry[]
+}
+
+model user_access_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model user_account_registry {
+  UAR_ID               Int       @id @default(autoincrement())
+  User_Name            String    @db.Text
+  Mobile_Number        String?   @db.Text
+  Email_Address        String?   @db.Text
+  Password             String    @db.Text
+  Name                 String?   @db.Text
+  Family               String?   @db.Text
+  Nation_ID            String?   @db.Text
+  Birthday_Date        String?   @db.Text
+  Score                Int?      @default(0)
+  Wallet               Float?    @default(0)
+  Recovery_Token       String?   @db.Text
+  Authentication_Token String?   @db.Text
+  Account_Status       Int?      @default(0)
+  Avatar               String?   @db.Text
+  Description          String?   @db.Text
+  Record_Status        Int?      @default(1)
+  Record_Select        Int?      @default(0)
+  Created_at           DateTime  @default(now()) @db.Timestamp(0)
+  Updated_at           DateTime? @db.DateTime(0)
+}
+
+model user_address_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model user_log_registry {
+  ULR_ID        Int      @id @default(autoincrement())
+  UAR_ID        BigInt
+  SUP_ID        BigInt
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model user_message_registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model website_property_registry {
+  ID            Int      @id @default(autoincrement())
+  Website_Title String   @db.Text
+  URL           String   @db.Text
+  Owner         String   @db.Text
+  Address       String   @db.Text
+  Tel           String   @db.Text
+  Email         String   @db.Text
+  Logo          String   @db.Text
+  License       String   @db.Text
+  Copyright     String   @db.Text
+  Status        Int
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+}
+
+model registry {
+  ID            Int      @id @default(autoincrement())
+  Description   String   @db.Text
+  Record_Status Int
+  Record_Select Int
+  Created_at    DateTime @default(now()) @db.Timestamp(0)
+  Updated_at    DateTime @db.DateTime(0)
+
+  @@map("__registry")
+}

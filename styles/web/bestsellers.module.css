@@ -1,0 +1,23 @@
+
+.bestsellers {
+    width: 89vw;
+    margin: 3vw 5vw 0vw 5vw;
+    padding-bottom: 2vw;
+    background-color: white;
+    border: lavender 1px solid;
+    border-radius: 0.3vw;
+}
+
+.title {
+    font-family: 'IRANSans';
+    color: dimgray;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
+
+.title span {
+    border-bottom: orangered 1px solid;
+    padding: 0.5vw;
+}
